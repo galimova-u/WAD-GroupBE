@@ -1,0 +1,136 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #a6a6a6;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.divider {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+}
+
+.sidebar {
+    background-color: lightgray;
+    width: 20%;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.posts {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.post-header > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author-icon + .post-date {
+    font-size: 14px;
+    color: #000000;
+}
+
+.post-media img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-text ~ .like {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.like{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+footer {
+    background-color: #a6a6a6;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+
+@media (max-width: 340px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
+    }
+} 
