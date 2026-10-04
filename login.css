@@ -1,0 +1,97 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+body h2 {
+    margin: 0;
+}
+
+header {
+    background-color: #a6a6a6;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 80%;
+    max-width: 400px;
+
+    margin: 40px auto;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form p {
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+nav a:hover{
+    background-color: lightgray;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.login-fields > input {
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-fields ~ input {
+    margin: 10px;
+}
+
+section + button {
+    width: 100px;
+}
+
+button {
+    background-color: #24558a;
+    color: white;
+    align-self: center;
+    padding: 5px 10px;
+}
+
+.submit-button:hover {
+    background-color: #4379b3;
+}
+
+@media (max-width: 340px) {
+
+}
